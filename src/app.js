@@ -5,6 +5,8 @@ const path = require('path')
 const express = require('express')
 const port = process.env.PORT || 3000
 const app = express()
+
+
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
