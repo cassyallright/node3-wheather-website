@@ -18,7 +18,7 @@ const url =' https://api.darksky.net/forecast/5dc29b584b119e6333facc5ad8013b59/'
 
             callback('Unable to find Coordinate',undefined)
         }else {
-            callback(undefined,body.daily.data[0].summary + 'SICAKLIK IS '+ body.daily.data[0].temperatureHigh+'There is a '+ body.currently.precipProbability+' % chance of rain')
+            callback(undefined,body.daily.data[0].summary + ' SICAKLIK IS '+ body.daily.data[0].temperatureHigh+' There is a '+ body.currently.precipProbability+' % chance of rain')
         }
 
     })

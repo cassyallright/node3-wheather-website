@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+{{>header}}
 <div class="main">
-    <h1>{{errorMessage}}</h1>
+
+    <p>{{errorMessage}}</p>
 
 
     <img class="portrait" src="img/404-sayfa-bulunamadi-not-found.JPG">
@@ -18,7 +19,6 @@
 
 
 </div>
-<a> Created by {{name}}</a>
-
+{{>footer}}
 </body>
 </html>
