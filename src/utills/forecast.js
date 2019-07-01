@@ -9,8 +9,10 @@
 
 const request= require('request')
 
+
+
 const forecast = (latitude,longitude,callback) => {
-const url =' https://api.darksky.net/forecast/5dc29b584b119e6333facc5ad8013b59/'+latitude+ ',' + longitude
+const url =' https://api.darksky.net/forecast/5dc29b584b119e6333facc5ad8013b59/'+latitude+ ',' + longitude+'?units=si'
     request ({url, json:true}, (error,{body}) => {
         if(error){
         callback('Unable to connect to the wheather server',undefined)
